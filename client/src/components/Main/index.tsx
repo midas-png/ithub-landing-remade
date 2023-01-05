@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { SingleBlock } from '../Singleblock';
+import { Doubleblock } from '../Doubleblock';
 import { MainWrapper } from './styles';
 import { Hero } from './Hero';
 import { Images } from 'assets';
@@ -19,6 +20,26 @@ export const Main: FC = () => {
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat.
       </SingleBlock>
+      <Doubleblock
+        variant='secondary'
+        title='iHub School'
+        buttonText='Записаться'
+        image={<Images.Welcoming />}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </Doubleblock>
+      <Doubleblock
+        title='Мастер классы'
+        buttonText='Подробнее'
+        image={<Images.Welcoming />}
+        reverse={true}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </Doubleblock>
     </MainWrapper>
   );
 };

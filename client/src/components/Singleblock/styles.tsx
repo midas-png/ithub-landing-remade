@@ -5,6 +5,7 @@ export const BlockWrapper = styled.div`
   display: flex;
   justify-content: center;
   padding: 100px 0;
+  background: ${({ theme }) => theme.palette.common.tertiary};
 `;
 
 export const ContentWrapper = styled.div`

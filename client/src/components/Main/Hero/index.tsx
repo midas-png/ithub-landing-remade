@@ -24,7 +24,7 @@ export const Hero: FC = () => {
         </ContentTitleWrapper>
         <ContentButtonsWrapper>
           <Button shadow='secondary'>Поступить в IThub</Button>
-          <Button variant='secondary' shadow='secondary'>
+          <Button variant='quaternary' shadow='secondary'>
             Пройти тест
           </Button>
         </ContentButtonsWrapper>

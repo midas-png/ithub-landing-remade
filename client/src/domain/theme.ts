@@ -12,7 +12,7 @@ export const defaultTheme: DefaultTheme = {
       main: '#ab00ea',
       secondary: '#000',
       tertiary: '#fff',
-      quaternary: '#1df7ff',
+      quaternary: '#a4f3de',
     },
     primary: {
       main: '#ab00ea',
@@ -20,9 +20,9 @@ export const defaultTheme: DefaultTheme = {
       contrastText: '#fff',
     },
     secondary: {
-      main: '#000',
+      main: '#fff',
       border: '#000',
-      contrastText: '#fff',
+      contrastText: '#000',
     },
     tertiary: {
       main: '#1df7ff',
@@ -30,9 +30,9 @@ export const defaultTheme: DefaultTheme = {
       contrastText: '#000',
     },
     quaternary: {
-      main: '#fff',
+      main: '#000',
       border: '#000',
-      contrastText: '#000',
+      contrastText: '#fff',
     },
   },
 };

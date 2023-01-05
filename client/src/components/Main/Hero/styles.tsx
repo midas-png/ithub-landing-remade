@@ -9,7 +9,7 @@ export const HeroWrapper = styled.div`
 
 export const ImageWrapper = styled.div`
   background: ${({ theme }) => theme.palette.common.main};
-  border-left: 1px solid ${({ theme }) => theme.palette.common.secondary};
+  border-left: 1px solid ${({ theme }) => theme.palette.common.tertiary};
 `;
 
 export const ContentWrapper = styled.div`
@@ -19,7 +19,7 @@ export const ContentWrapper = styled.div`
   justify-content: center;
   gap: 30px;
   padding-left: 80px;
-  border-right: 1px solid ${({ theme }) => theme.palette.common.secondary};
+  border-right: 1px solid ${({ theme }) => theme.palette.common.tertiary};
 `;
 
 export const ContentTitleWrapper = styled.div`
