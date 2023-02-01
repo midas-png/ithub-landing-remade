@@ -76,9 +76,9 @@ export const BlockWrapper = styled.div`
   height: 85vh;
 
   @media screen and (max-width: 1024px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
   }
 `;
 
@@ -98,9 +98,6 @@ export const ContentWrapper = styled.div<IProps>`
 
   @media screen and (max-width: 1024px) {
     order: 1;
-  }
-
-  @media screen and (max-width: 1024px) {
     padding: 40px 0;
   }
 `;
