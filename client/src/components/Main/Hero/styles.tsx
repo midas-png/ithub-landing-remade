@@ -5,11 +5,19 @@ export const HeroWrapper = styled.div`
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr 1fr;
   height: calc(100vh - 100px);
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const ImageWrapper = styled.div`
   background: ${({ theme }) => theme.palette.common.main};
   border-left: 1px solid ${({ theme }) => theme.palette.common.tertiary};
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 `;
 
 export const ContentWrapper = styled.div`
@@ -20,6 +28,10 @@ export const ContentWrapper = styled.div`
   gap: 30px;
   padding-left: 80px;
   border-right: 1px solid ${({ theme }) => theme.palette.common.tertiary};
+
+  @media screen and (max-width: 1024px) {
+    padding: 0 20px;
+  }
 `;
 
 export const ContentTitleWrapper = styled.div`
@@ -28,6 +40,10 @@ export const ContentTitleWrapper = styled.div`
   justify-content: center;
   gap: 15px;
   width: 60%;
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 export const ContentButtonsWrapper = styled.div`

@@ -52,4 +52,8 @@ export const MarqueeText = styled.span<IProps>`
       ? theme.palette.common.secondary
       : theme.palette.common.tertiary};
   font-size: 50px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 35px;
+  }
 `;

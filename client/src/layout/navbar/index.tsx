@@ -2,6 +2,7 @@ import {
   NavbarWrapper,
   NavigationWrapper,
   LinkComponent as Link,
+  MenuBurger,
 } from './styles';
 import { Button, Title } from 'ui';
 import { NAVIGATION_LINKS } from 'data';
@@ -17,5 +18,6 @@ export const Navbar = () => (
       ))}
       <Button>Поступить</Button>
     </NavigationWrapper>
+    <MenuBurger />
   </NavbarWrapper>
 );

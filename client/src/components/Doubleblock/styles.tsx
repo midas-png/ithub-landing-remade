@@ -74,6 +74,12 @@ export const BlockWrapper = styled.div`
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr 1fr;
   height: 85vh;
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: auto;
+  }
 `;
 
 export const ContentWrapper = styled.div<IProps>`
@@ -89,6 +95,14 @@ export const ContentWrapper = styled.div<IProps>`
   ${({ reverse }) => reverse && 'order: 1;'}
   ${({ reverse }) => borderContentReverseMap[reverse ? 'true' : 'false']};
   ${({ variant = 'primary' }) => contentVariantMap[variant]};
+
+  @media screen and (max-width: 1024px) {
+    order: 1;
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding: 40px 0;
+  }
 `;
 
 export const InformationWrapper = styled.div`
@@ -120,6 +134,11 @@ export const ImageWrapper = styled.div<IProps>`
   svg {
     transform: scale(0.7);
   }
+
+  @media screen and (max-width: 1024px) {
+    padding: 40px;
+  }
+
   ${({ variant = 'primary' }) => imageVariantMap[variant]};
   ${({ reverse }) => borderImageReverseMap[reverse ? 'true' : 'false']}
 `;
@@ -135,6 +154,11 @@ export const PictureContent = styled.div`
   box-shadow: 5px 5px 0px 0px ${({ theme }) => theme.palette.common.secondary};
   height: 60%;
   width: 350px;
+
+  @media screen and (max-width: 1024px) {
+    height: 300px;
+    width: 300px;
+  }
 `;
 
 export const ImageSquare = styled.img`

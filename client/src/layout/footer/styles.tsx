@@ -7,6 +7,11 @@ export const FooterWrapper = styled.div`
   padding: 80px;
   width: 100%;
   background: ${({ theme }) => theme.palette.common.secondary};
+
+  @media screen and (max-width: 1024px) {
+    padding: 40px;
+    justify-content: center;
+  }
 `;
 
 export const NavigationWrapper = styled.div`
@@ -15,6 +20,11 @@ export const NavigationWrapper = styled.div`
   grid-template-rows: repeat(auto-fit, fit-content(100%));
   margin: 0 auto 0 auto;
   gap: 100px;
+
+  @media screen and (max-width: 1024px) {
+    gap: 30px;
+    grid-template-columns: repeat(1, fit-content(100%));
+  }
 `;
 
 export const NavigationColumnWrapper = styled.div`
@@ -24,6 +34,16 @@ export const NavigationColumnWrapper = styled.div`
 
   span:first-child {
     margin-bottom: 15px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    span:first-child {
+      margin-bottom: 0px;
+    }
   }
 `;
 

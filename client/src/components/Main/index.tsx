@@ -3,7 +3,7 @@ import { SingleBlock } from '../Singleblock';
 import { Doubleblock } from '../Doubleblock';
 import { MainWrapper } from './styles';
 import { Hero } from './Hero';
-import { Faculties } from './Faculties';
+// import { Faculties } from './Faculties';
 import { Images } from 'assets';
 import { Marquee } from 'ui';
 
@@ -41,7 +41,7 @@ export const Main: FC = () => {
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat.
       </Doubleblock>
-      <Faculties />
+      {/* <Faculties /> */}
     </MainWrapper>
   );
 };

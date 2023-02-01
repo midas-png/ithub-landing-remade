@@ -15,6 +15,12 @@ export const ContentWrapper = styled.div`
   justify-content: center;
   gap: 30px;
   max-width: 1000px;
+
+  @media screen and (max-width: 1024px) {
+    * {
+      text-align: center;
+    }
+  }
 `;
 
 export const ImageWrapper = styled.div`
@@ -25,6 +31,10 @@ export const ImageWrapper = styled.div`
     height: 300px;
     width: fit-content;
   }
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 `;
 
 export const BlockDescription = styled.span`
@@ -32,4 +42,8 @@ export const BlockDescription = styled.span`
   font-size: 20px;
   text-align: center;
   width: 60%;
+
+  @media screen and (max-width: 1024px) {
+    width: 90%;
+  }
 `;
